@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NTL, SA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="navbar">
+    <div class="logo"><img src="D9788780-F6A0-4A96-A71A-178052DB8474.jpeg" alt="Logo NTL" class="logo-img"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html#services">Serviços</a></li>
+        <li><a href="index.html#insights">Insights</a></li>
+        <li><a href="index.html#contact">Contato</a></li>
+        <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="login-container">
+    <h2>Entrar na Conta</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginSenha" placeholder="Senha" required>
+      <button type="submit" class="btn">Login</button>
+      <p>Não tem conta? <a href="criar-conta.html">Criar conta</a></p>
+    </form>
+    <p id="loginMensagem"></p>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

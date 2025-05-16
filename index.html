@@ -1,195 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTL, SA - Auditoria Financeira & Consultoria</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+<html lang="pt">
+<head><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NTL,SA</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Arquivo de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Ícones Font Awesome (opcional) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-papdAaA8O6FzJ9r9bRMGmw1eIEJfL4mV4yZTWk+F0+mQCS2ZWt/vjs+9j58OJvOZVYZ+59U3dOBx1QrnkT1Ybg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head></head>
 <body>
-    <!-- Navbar -->
 
- <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">NTL, SA</div>
-         <div class="menu-toggle" id="menu-toggle">
-  <span></span>
-  <span></span>
-  <span></span>
+  <!-- NAVBAR -->
+  <header id="navbar">
+
+   <div class="logo">
+  <img src="B90AE8E1-E3F4-4EBC-ADE9-A20342BB5FB0.jpeg" alt="Logo NTL" style="height: 40px;">
 </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#team">parcerias</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
+    <nav>
+
+      <ul>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
     </nav>
+  </header>
 
-        
 
-    
+  <!-- HERO -->
+<section class="hero" style="position: relative; background-image: url('servicoo.jpeg'); background-size: cover; background-position: center; height: 100vh;">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>AUDITORIA FINANCEIRA & CONSULTORIA</h1>
-            <p>Excelência em serviços financeiros e soluções empresariais</p>
-            <a href="#contact" class="cta-button">Solicite uma Consulta</a>
-        </div>
-    </section>
+  <!-- Overlay escuro -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>sobre nós</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>A NTL, SA é uma empresa líder em auditoria financeira e consultoria empresarial, oferecendo soluções personalizadas e estratégicas para organizações de todos os portes. Com uma equipe altamente qualificada e anos de experiência no mercado, garantimos excelência e confiabilidade em todos os nossos serviços.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>5+</h3>
-                        <p>Anos de Experiência</p>
-                    </div>
-                    <div class="stat">
-                        <h3>500+</h3>
-                        <p>Clientes Atendidos</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Satisfação</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Texto -->
+  <div class="hero-text" style="position: relative; z-index: 2; color: white;">
+    <h1>NTL</h1>
+    <p>Estratégia • Auditoria • Transformação Digital</p>
+   <!-- <a href="#sobre" class="cta-button">Ler mais</a>-->
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Nossos Serviços</h2> 
-<section id="servicos">
-    <h2></h2>
-    <p></p>
-    <a href="emprestimo.html" class="botao-estilo">Solicitar Empréstimo</a>
+  </nav> <nav class="button-group">
+  <a href="#contact" class="cta-button">Solicite uma Consulta</a>
+  <a href="logina.html" class="login-button">Fazer login</a>
+</nav>
+
 </section>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Auditoria Financeira</h3>
-                    <p>Análise detalhada e verificação da conformidade das demonstrações financeiras.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Consultoria Empresarial</h3>
-                    <p>Assessoria estratégica para otimização de processos e tomada de decisões.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Planejamento Fiscal</h3>
-                    <p>Estratégias para otimização tributária e conformidade fiscal.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Compliance</h3>
-                    <p>Implementação e monitoramento de programas de conformidade.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2>Nossas parcerias</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="bfa.png" alt="Executivo">
-                    <h3>banco de fomentos angola</h3>
-                    <p>BFA</p>
-                </div>
-                <div class="team-member">
-                  <a href="google.com">
-   <img src="bic.png" alt="Executiva" >
-</a>  
-                    <h3>BIC</h3>
-                    <p>bic</p>
-                </div>
-                <div class="team-member">
-                    <img src="bpc.png" alt="Executivo">
-                    <h3>bpc</h3>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" required placeholder="Nome Completo">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" required placeholder="Email Corporativo">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="company" required placeholder="Empresa">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" required placeholder="Como podemos ajudar sua empresa?"></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>...<br>Luanda, Angola</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+244 933000222</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contato@ntlsa.com.ao</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-
-                <div class="footer-logo">NTL, SA </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/nkosi_tuma_luvemba?igsh=MXF2MXc0eDdvb3JmYw=="><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 NTL, SA. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 
 
-</body>
-</html> 
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <!-- SOBRE A EMPRESA -->
+  <section id="sobre" class="wrapper">
+    <h2>Quem Somos</h2>
+    <p>A NTL, SA é uma empresa angolana dedicada à transformação das organizações através de serviços de auditoria, consultoria e cibersegurança. Atuamos com compromisso ético, responsabilidade social e excelência técnica.</p>
+  </section>
+
+  <!-- NOSSA MISSÃO -->
+  <section id="missao" class="wrapper" style="background-color: #f4f6f8;">
+    <h2>Missão</h2>
+    <p>Transformar organizações angolanas em instituições mais seguras, eficientes e sustentáveis, contribuindo para um ecossistema empresarial sólido e transparente.</p>
+  </section>
+
+  <!-- IMPACTO SOCIAL -->
+  <section id="impacto" class="wrapper">
+    <h2>Compromisso Social</h2>
+    <p>Acreditamos que o desenvolvimento das empresas deve caminhar junto com o desenvolvimento social. Por isso, apoiamos iniciativas de educação financeira e promovemos a inclusão digital.</p>
+  </section>
+
+  <!-- INSPIRAÇÃO INTERNACIONAL -->
+  <section id="inspiracao" class="wrapper" style="background-color: #f4f6f8;">
+    <h2>Referências Globais</h2>
+    <p>Nos inspiramos em empresas como EY, Deloitte, PwC e KPMG — que lideram globalmente com integridade, inovação e impacto sustentável — para oferecer soluções de classe mundial em Angola.</p>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="services" class="wrapper">
+    <h2>Nossos serviços</h2>
+    <div class="card-grid">
+      <a class="servico" href="#">
+        <h3>Auditoria Financeira</h3>
+        <p>Avaliação independente para fortalecer a confiança dos stakeholders.</p>
+      </a>
+
+      <a class="servico2" href="#">
+        <h3>Consultoria Empresarial</h3>
+        <p>Planos de ação personalizados para acelerar resultados.</p>
+      </a>
+      <a class="servico3" href="#">
+        <h3>Cibersegurança</h3>
+        <p>Processos, pessoas e tecnologia alinhados ao futuro.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section id="insights" class="wrapper">
+    <h2>Insights recentes</h2>
+    <div class="insight-grid">
+      <article>
+        <h4>Relatório de tendências 2025</h4>
+        <p>Principais mudanças no ambiente regulatório e como se preparar.</p>
+      <a href="indexx.html" class="btn">Ler mais</a>
+      </article>
+      <article>
+        <h4>Guia de ESG para PMEs</h4>
+        <p>Passo a passo para iniciar práticas sustentáveis com baixo custo.</p>
+       <a href="insight-esg-pmes.html" class="btn">Ler mais</a>
+      </article>
+      <article>
+        <h4>Podcast: IA na auditoria</h4>
+        <p>Como a inteligência artificial está mudando a verificação de dados.</p>
+        <a class="btn" href="#">Ouvir agora</a>
+      </article>
+    </div>
+  </section>
+<section id="contato" class="contato">
+  <div class="container">
+    <h2>Fale Conosco</h2>
+    <p>Tem dúvidas ou precisa de ajuda? Envie-nos uma mensagem.</p>
+
+
+
+    <form class="contato-form" action="#" method="post">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </div>
+</section>
+
+  <!-- CONTATO / RODAPÉ -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <p><strong>nkosi tuma luvemna </strong><br>
+         Luanda, Camama  • Angola</p>
+
+      <div class
