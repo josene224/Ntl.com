@@ -7,8 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <header id="navbar">
-    <div class="logo"><img src="037EE112-20E2-4B81-8FDD-DDE32F65B220.png" alt="Logo NTL" class="logo-img"></div>
+    <div class="logo">
+      <img src="037EE112-20E2-4B81-8FDD-DDE32F65B220.png" alt="Logo NTL" class="logo-img">
+    </div>
     <nav>
       <ul>
         <li><a href="index.html#services">Serviços</a></li>
@@ -19,6 +23,7 @@
     </nav>
   </header>
 
+  <!-- FORMULÁRIO -->
   <main class="login-container">
     <h2>Criar Conta</h2>
     <form id="signupForm">
@@ -30,6 +35,17 @@
     <p id="signupMensagem" class="mensagem"></p>
   </main>
 
-  <script src="auth.js"></script>
+  <!-- SCRIPT para redirecionamento -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('signupForm');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Impede envio tradicional
+        // Aqui poderia incluir validações ou salvar dados localmente
+        window.location.href = 'indeex.html'; // Redireciona
+      });
+    });
+  </script>
+
 </body>
 </html>
