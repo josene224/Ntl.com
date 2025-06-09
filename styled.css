@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #002b5c;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cyber-section h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #002b5c;
+}
+
+.cyber-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.cyber-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cyber-section ol {
+  padding-left: 20px;
+}
+
+.cyber-section ol li {
+  margin-bottom: 15px;
+}
+
+.btn-enviar {
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-top: 20px;
+}
+
+.btn-enviar:hover {
+  background-color: #003060;
+}
+
+.btn-voltar {
+  background-color: #ccc;
+  color: #002b5c;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.btn-voltar:hover {
+  background-color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cyber-section h1 {
+    font-size: 20px;
+  }
+
+  .cyber-section h2 {
+    font-size: 18px;
+  }
+
+  .cyber-section p, .cyber-section ol li {
+    font-size: 15px;
+  }
+
+  .btn-enviar, .btn-voltar {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+.barra-superior {
+  background-color: #003366; /* Azul escuro, você pode mudar */
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nome-empresa {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* Estiliza os campos de texto e seleção */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+select option:first-child {
+  color: #999; /* deixa o "Selecione o ramo..." com cor de placeholder */
+}
