@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Consultoria NTL</title>
+    <!-- Link para a fonte Open Sans do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styled.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- TEMPORARIAMENTE: TEXTO COMO LOGO. SUBSTITUA POR IMAGEM DEPOIS. -->
+                <a ><h1>Consultoria NTL</h1></a>
+                <!-- PARA USAR IMAGEM (COMENTE A LINHA ACIMA E DESCOMENTE ABAIXO): -->
+                <!-- <a href="index.html"><img src="logo.png" alt="Logo Consultoria NTL"></a> -->
+            </div>
+            <!-- REMOVIDA A NAVEGAÇÃO COMPLETA -->
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-form-section">
+            <h2>Fale Conosco para sua Consultoria</h2>
+
+            <p id="formMessage" class="message"></p>
+
+            <form action="https://formsubmit.co/tatijosene@gmail.com" method="POST" id="contactForm">
+                <!-- IMPORTANT: Substitua tatijosene@gmail.com pelo seu endereço de e-mail real -->
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="text" id="nomeEmpresa" name="nomeEmpresa" required placeholder=" ">
+                    <label for="nomeEmpresa" class="floating-input-label">Nome da Empresa:</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- Rótulo normal para SELECT - sem classe floating-input-label -->
+                    <label for="ramoAtividade">Ramo de Atividade:</label>
+                    <select id="ramoAtividade" name="ramoAtividade" required>
+                        <option value="">Selecione o Ramo</option>
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Financas">Finanças e Contabilidade</option>
+                        <option value="Saude">Saúde e Bem-estar</option>
+                        <option value="Educacao">Educação</option>
+                        <option value="Comercio">Comércio e Varejo</option>
+                        <option value="Servicos">Serviços Profissionais</option>
+                        <option value="Industria">Indústria e Manufatura</option>
+                        <option value="Construcao">Construção Civil</option>
+                        <option value="Turismo">Hotelaria e Turismo</option>
+                        <option value="Alimentacao">Alimentação e Bebidas</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="outroRamoGroup" style="display: none;">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="text" id="outroRamo" name="outroRamo" placeholder=" ">
+                    <label for="outroRamo" class="floating-input-label">Especifique o Ramo:</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="text" id="nif" name="NIF" required placeholder=" ">
+                    <label for="nif" class="floating-input-label">NIF (Número de Identificação Fiscal):</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="text" id="endereco" name="Endereco" required placeholder=" ">
+                    <label for="endereco" class="floating-input-label">Morada/Endereço:</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="tel" id="telefone" name="Telefone" required placeholder=" ">
+                    <label for="telefone" class="floating-input-label">Contacto Telefónico:</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="email" id="email" name="Email" required placeholder=" ">
+                    <label for="email" class="floating-input-label">Email da Empresa:</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="text" id="nomeContato" name="Nome_Contacto" required placeholder=" ">
+                    <label for="nomeContato" class="floating-input-label">Nome do Contacto (Responsável):</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- INPUT primeiro, LABEL depois para o efeito flutuante -->
+                    <input type="text" id="cargoContato" name="Cargo_Contacto" placeholder=" ">
+                    <label for="cargoContato" class="floating-input-label">Cargo do Contacto:</label>
+                </div>
+
+                <div class="form-group">
+                    <!-- Rótulo normal para o grupo de checkboxes - sem classe floating-input-label -->
+                    <label>Interesse na Consultoria:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="ciberseguranca" name="Servicos_Interesse[]" value="Ciberseguranca">
+                        <label for="ciberseguranca">Cibersegurança</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="auditoriaFinanceira" name="Servicos_Interesse[]" value="Auditoria_Financeira">
+                        <label for="auditoriaFinanceira">Auditoria Financeira</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="gestaoEmpresarial" name="Servicos_Interesse[]" value="Gestao_Empresarial">
+                        <label for="gestaoEmpresarial">Gestão Empresarial</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="outroServico" name="Servicos_Interesse[]" value="Outro_Servico">
+                        <label for="outroServico">Outro Serviço:</label>
+                        <input type="text" id="outroServicoText" name="Outro_Servico_Detalhes" class="inline-input" placeholder="Especifique o serviço">
+ 
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <!-- TEXTAREA primeiro, LABEL depois para o efeito flutuante -->
+                    <textarea id="mensagem" name="Mensagem" rows="5" placeholder=" "></textarea>
+                    <label for="mensagem" class="floating-input-label">Sua Mensagem/Necessidades:</label>
+                </div>
+
+                <input type="text" name="_honey" style="display:none">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_format" value="json">
+                  <input type="hidden" name="_next" value="https://jazzy-moonbeam-f29e35.netlify.app/indeex.html">
+
+                <button type="submit">Enviar Solicitação</button>
+
+                <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Consultoria NTL. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
