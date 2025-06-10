@@ -1,0 +1,43 @@
+body {
+font-family: 'Open Sans', sans-serif;
+background-color: #f0f8ff; /* Azul bem claro para o fundo /
+color: #191970; / Azul escuro para o texto */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+.container {
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 40px;
+text-align: center;
+width: 80%;
+max-width: 600px;
+}
+.logo {
+margin-bottom: 20px;
+}
+.logo img {
+max-width: 200px;
+height: auto;
+}
+.mensagem h1 {
+color: #191970;
+margin-bottom: 15px;
+}
+.mensagem p {
+font-size: 1.1em;
+line-height: 1.6;
+margin-bottom: 10px;
+}
+/* Opcional: Estilos adicionais para links ou botões se você adicionar /
+/ a {
+color: #007bff;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+} */
